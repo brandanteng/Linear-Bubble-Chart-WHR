@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type='text/css'>
+
+		<meta charset="utf-8">
+		<title>Linear Bubble Chart - WHR</title>
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+		<link rel="stylesheet" href="./css/style.css">
+		<svg width="960" height="200"></svg>
+	</head>
+	<body>
+
+		<div id="body">
+	      <!-- <div id="footer">
+	        What do the happiest countries in the world have in common?
+					<div class="hint">
+						<span>Every year the World Happiness Report is released based on a worldwide survey aimed at evaluating the average population happiness of each country worldwide.<span/></br>
+						<span>What other factors are correlated with happiness? Click on a variable button below to see how it is related to happiness.</span></br>
+						<span>Hint: Mouse over a bubble to identify country. Double-click on a bubble to highlight it and follow its journey through the visualization.</span>
+					</div>
+		    </div> -->
+				<div id="buttons"></div>
+				<div id="SideText">
+				  <p id="p0" class="pTitle Side">Happiness score</p>
+			 	  <p id="p1" class="Side">Happiness is measured based on an the average happiness score collected in an annual worldwide survey.</p>
+					<p id="p2" class="Side">According to this survey, Scandinavian countries seem to be the happiest in the world, with Israel, Costa Rica, New Zealand and Australia up there too. All bubbles are colored based on their happiness.</p>
+			  </div>
+			  <div id="chart"></div>
+			  <div id="BelowLeftText">
+					<p id="less">
+						Less happy
+					</p>
+				  </div>
+					<div id="BelowRightText">
+					<p id = "more">
+						More happy
+					</p>
+			  </div>
+			<div id="colorLegend">
+				<svg height="30" width="280">
+					<circle cx="270" cy="15" r="8" stroke="black" stroke-width="0.5" fill="#FEEC09"></circle>
+					<circle cx="240" cy="15" r="8" stroke="black" stroke-width="0.5" fill="#08968D"></circle>
+					<circle cx="210" cy="15" r="8" stroke="black" stroke-width="0.5" fill="#55005D"></circle>
+				</svg>
+				<span id="titleColorLegend">Color legend:</span>
+				<span id="leftColorLegend">Less happy countries</span>
+				<span id="rightColorLegend">More happy countries</span>
+			</div>
+
+			<div id="sizeLegend">
+				<svg height="60" width="350">
+					<circle cx="295" cy="15" r="15" stroke="black" stroke-width="0.5" fill="grey"></circle>
+					<circle cx="247" cy="15" r="10" stroke="black" stroke-width="0.5" fill="grey"></circle>
+					<circle cx="210" cy="15" r="7" stroke="black" stroke-width="0.5" fill="grey"></circle>
+				</svg>
+				<span id="titleSizeLegend">Size legend:</span>
+				<span id="leftSizeLegend">Smaller population</span>
+				<span id="rightSizeLegend">Bigger population</span>
+			</div>
+
+				<div id="prettytooltip" class="hidden">
+					<p><strong id="country">Country</strong></p>
+					<p><span id="pretty_variable">Happiness score: </span><span id="pre_symbol"></span><span id="value">100</span><span id="post_symbol"></span></p>
+				</div>
+				
+		</div>
+
+		</script>
+	</body>
+	<script src="./js/linearbubblechart.js"></script>
+</html>
