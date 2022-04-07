@@ -327,19 +327,19 @@
 
             if(selected_variable == "PopAge") {
                 pre_symbol = ""
-                post_symbol = ""
-                pretty_variable = "Age: "
+                post_symbol = "%"
+                pretty_variable = "Pop. aged 15-64: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Population's Age");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Population Age 15-64");
     
                 d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower Population Age");
                 d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher Population Age");
 
             } else if (selected_variable == "Internet") {
-                pre_symbol = "$"
-                post_symbol = ""
-                pretty_variable = "Internet: "
+                pre_symbol = ""
+                post_symbol = "%"
+                pretty_variable = "Internet Penetration: "
                 formatValue = d3.format(",");
     
                 d3.select("#p0").transition().duration(800).style("opacity", 1).text("Internet Penetration");
@@ -349,14 +349,14 @@
 
             } else if (selected_variable == "%PopUnemployed") {
                 pre_symbol = ""
-                post_symbol = " years"
-                pretty_variable = "PopUnemployed: "
+                post_symbol = "%"
+                pretty_variable = "Pop. Unemployed: "
                 formatValue = d3.format(".2n");
     
                 d3.select("#p0").transition().duration(800).style("opacity", 1).text("Percentage of Population Unemployed");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Low unemplyment rate");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("High unemplyment rate");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Low unemployment rate");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("High unemployment rate");
 
             } else if (selected_variable == "GPI") {
                 pre_symbol = ""
@@ -371,9 +371,9 @@
 
             } else if (selected_variable == "Sleep") {
                 pre_symbol = ""
-                post_symbol = "%"
+                post_symbol = ""
                 pretty_variable = "Sleep: "
-                formatValue = d3.format(".2n");
+                formatValue = d3.format(",");
     
                 d3.select("#p0").transition().duration(800).style("opacity", 1).text("Sleep");
     
@@ -381,7 +381,7 @@
                 d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher Sleep");
 
             } else if (selected_variable == "Workinghours") {
-                pre_symbol = "$"
+                pre_symbol = ""
                 post_symbol = ""
                 pretty_variable = "Working hours: "
                 formatValue = d3.format(",");
