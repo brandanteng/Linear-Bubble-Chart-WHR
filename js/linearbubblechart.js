@@ -328,13 +328,13 @@
             if(selected_variable == "PopAge") {
                 pre_symbol = ""
                 post_symbol = ""
-                pretty_variable = "PopAge: "
+                pretty_variable = "Age: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("PopAge");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Population's Age");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Less happy");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("More happy");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower Population Age");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher Population Age");
 
             } else if (selected_variable == "Internet") {
                 pre_symbol = "$"
@@ -342,21 +342,21 @@
                 pretty_variable = "Internet: "
                 formatValue = d3.format(",");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("GDP per capita");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Internet Penetration");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower GDP per capita");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher GDP per capita");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower Internet Penetration");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher Internet Penetration");
 
             } else if (selected_variable == "%PopUnemployed") {
                 pre_symbol = ""
                 post_symbol = " years"
-                pretty_variable = "%PopUnemployed: "
+                pretty_variable = "PopUnemployed: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Years of schooling");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Percentage of Population Unemployed");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Less school");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("More school");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Low unemplyment rate");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("High unemplyment rate");
 
             } else if (selected_variable == "GPI") {
                 pre_symbol = ""
@@ -364,10 +364,10 @@
                 pretty_variable = "GPI: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Sustainable economic development");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Global Peace Index (GPI)");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower sustainable economic development");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher sustainable economic development");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower GPI");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher GPI");
 
             } else if (selected_variable == "Sleep") {
                 pre_symbol = ""
@@ -375,10 +375,10 @@
                 pretty_variable = "Sleep: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Employment rate");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Sleep");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower employment");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher employment");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower Sleep");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher Sleep");
 
             } else if (selected_variable == "Workinghours") {
                 pre_symbol = "$"
@@ -386,10 +386,10 @@
                 pretty_variable = "Working hours: "
                 formatValue = d3.format(",");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Health expenditure");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Working Hours");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower health expenditure");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher health expenditure");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower Working Hours");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher Working Hours");
 
             } else if (selected_variable == "Vacationdays") {
                 pre_symbol = ""
@@ -397,10 +397,10 @@
                 pretty_variable = "Vacation Days: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Government effectiveness");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Vacation Days");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Lower government effectiveness");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("Higher government effectiveness");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Low Vacation Days");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("High Vacation Days");
 
             } else if (selected_variable == "MentalHealth") {
                 pre_symbol = ""
@@ -408,10 +408,10 @@
                 pretty_variable = "Mental Health: "
                 formatValue = d3.format(".2n");
     
-                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Control of corruption");
+                d3.select("#p0").transition().duration(800).style("opacity", 1).text("Mental Health");
     
-                d3.select("#less").transition().duration(800).style("opacity", 1).text("Worse control of corruption");
-                d3.select("#more").transition().duration(800).style("opacity", 1).text("Better control of corruption");
+                d3.select("#less").transition().duration(800).style("opacity", 1).text("Worse Mental Health");
+                d3.select("#more").transition().duration(800).style("opacity", 1).text("Better Mental Health");
             };
         })
     })
