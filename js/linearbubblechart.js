@@ -219,7 +219,7 @@
     var pretty_variable = "Happiness score: "
     var formatValue = d3.format(".2n");
     
-    d3.csv('./data/country_data_non_missing.csv', function(data){
+    d3.csv('./data/linearbubblechart.csv', function(data){
         // define some useful scales
         var radiusScale = d3.scaleLinear()
             .domain(d3.extent(data, function(d) { return parseFloat(d.population) }))
